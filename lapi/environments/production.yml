@@ -1,0 +1,23 @@
+# configuration file for production environment
+
+# only log warning and error messsages
+log: "warning"
+
+# log message to a file in logs/
+logger: "file"
+log_path: "/var/log/livestatus-api"
+
+# don't consider warnings critical
+warnings: 0
+
+# hide errors 
+show_errors: 1
+
+# cache route resolution for maximum performance
+route_cache: 1
+
+livestatus_servers:
+  PC1: "cloudeng-nagios-prod-ui-01:6557"
+  PC2: "cloudeng-nagios-prod-ui-02:6557"
+  PC3: "cloudeng-nagios-prod-ui-03:6557"
+  PC4: "cloudeng-nagios-prod-ui-04:6557"

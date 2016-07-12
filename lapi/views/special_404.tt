@@ -1,0 +1,13 @@
+
+<div id="encapsulate">
+    <center>
+    <div id="msg" style="margin-top:5px;">
+        You tried to reach <% path %>, but it is unavailable at the moment.
+    </div>
+    <div style="height:10px;"></div>
+    <div id="contact">
+        Please try again or contact us at our github page:
+        <a href="https://github-ca.corp.zynga.com/mwest/livestatus-api">Livestatus API Code / Help</a>
+    </div>
+    </center>
+</div>

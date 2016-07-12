@@ -1,0 +1,24 @@
+<html>
+<body>
+<div id="container" style="padding-top:10px;">
+  <table class="noderesults" id="resultsTable" class="display" style="width:97%;">
+    <thead>
+      <tr>
+        <%- FOREACH field IN fields %>
+        <th><% field %></th>
+        <%- END %>
+      </tr>
+    </thead>
+    <tbody>
+      <%- FOREACH datapoint IN data %>
+      <tr>
+        <%- FOREACH field IN fields %>
+          <td><% datapoint.$field %></td>
+        <%- END %>
+      </tr>
+      <%- END -%>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
